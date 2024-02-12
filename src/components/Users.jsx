@@ -8,7 +8,7 @@ function Users() {
 
   useEffect(() => {
     axios
-      .get('http://localhost:3000/user/bulk?filter=' + filter)
+      .get('https://paytm-backend-bc19.onrender.com/user/bulk?filter=' + filter)
       .then((response) => setUsers(response.data.user));
   }, [filter]);
   return (
@@ -66,8 +66,6 @@ function User({ user }) {
           Transfer Money
         </button>
       </div>
-      {/* <div className="flex flex-col justify-center h-ful"> */}
     </div>
-    // </div>
   );
 }

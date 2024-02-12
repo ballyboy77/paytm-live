@@ -43,7 +43,7 @@ function Transfer() {
             <button
               onClick={() => {
                 axios.post(
-                  'http://localhost:3000/accounts/transfer',
+                  'https://paytm-backend-bc19.onrender.com/accounts/transfer',
                   {
                     to: id,
                     amount: amount,

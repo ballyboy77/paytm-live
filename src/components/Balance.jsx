@@ -9,7 +9,7 @@ export const Balance = () => {
         <button
           onClick={async () => {
             const response = await axios.get(
-              'http://localhost:3000/accounts/balance',
+              'https://paytm-backend-bc19.onrender.com/accounts/balance',
               {
                 headers: {
                   Authorization: localStorage.getItem('token'),
